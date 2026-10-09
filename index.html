@@ -1,36 +1,66 @@
-♛ ROYAL ARCADE
-DEMO BALANCE10,000VIRTUAL COINS · NO CASH VALUE
-Reset demo
-PLAY FOR FUN · VIRTUAL COINS ONLY
-Your night.
-Your games.
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Royal Arcade — Virtual Casino Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Royal Arcade home"><span class="crown">♛</span> ROYAL <em>ARCADE</em></a>
+    <div class="wallet"><span>DEMO BALANCE</span><strong id="balance">10,000</strong><small>VIRTUAL COINS · NO CASH VALUE</small></div>
+    <button id="resetBtn" class="button button-ghost">Reset demo</button>
+  </header>
 
-A casino-inspired arcade for practice and entertainment. Coins are fictional and cannot be bought, sold, or withdrawn.
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">PLAY FOR FUN · VIRTUAL COINS ONLY</div>
+        <h1>Your night.<br><span>Your games.</span></h1>
+        <p>A casino-inspired arcade for practice and entertainment. Coins are fictional and cannot be bought, sold, or withdrawn.</p>
+        <a class="button button-gold" href="#games">Explore games <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="halo"></div><div class="seven">7<span>7</span>7</div>
+        <div class="chip chip-one">♠</div><div class="chip chip-two">♦</div>
+        <div class="hero-label">ROYAL<br><b>ARCADE</b></div>
+      </div>
+    </section>
 
-Explore games ↓
-777
-♠
-♦
-ROYAL
-ARCADE
-ROUNDS PLAYED0
-VIRTUAL COINS WON0
-SESSION MODEDEMO
-THE GAME ROOM
-Choose your game
+    <section class="stats">
+      <div><span>ROUNDS PLAYED</span><strong id="rounds">0</strong></div>
+      <div><span>VIRTUAL COINS WON</span><strong id="won">0</strong></div>
+      <div><span>SESSION MODE</span><strong class="green">DEMO</strong></div>
+    </section>
 
-6 games · no real money
-🎰Lucky SlotsSpin the reels  🎡RoulettePick a result 🂡BlackjackBeat the dealer  🃏Five-card drawTry your luck 🎲DiceHigh or low  🚀Sky MultiplierSimulated crash
-GAME 01
-Lucky Slots
+    <section id="games" class="section-head">
+      <div><div class="eyebrow">THE GAME ROOM</div><h2>Choose your game</h2></div>
+      <span class="subtle">6 games · no real money</span>
+    </section>
 
-● DEMO MODE
-Choose your virtual-coin amount and play a round.
-YOUR SESSION
-Recent rounds
+    <nav class="game-grid" aria-label="Choose a game">
+      <button class="game-card active" data-game="slots"><span class="game-icon">🎰</span><span class="game-name">Lucky Slots</span><span class="game-desc">Spin the reels</span></button>
+      <button class="game-card" data-game="roulette"><span class="game-icon">🎡</span><span class="game-name">Roulette</span><span class="game-desc">Pick a result</span></button>
+      <button class="game-card" data-game="blackjack"><span class="game-icon">🂡</span><span class="game-name">Blackjack</span><span class="game-desc">Beat the dealer</span></button>
+      <button class="game-card" data-game="poker"><span class="game-icon">🃏</span><span class="game-name">Five-card draw</span><span class="game-desc">Try your luck</span></button>
+      <button class="game-card" data-game="dice"><span class="game-icon">🎲</span><span class="game-name">Dice</span><span class="game-desc">High or low</span></button>
+      <button class="game-card" data-game="crash"><span class="game-icon">🚀</span><span class="game-name">Sky Multiplier</span><span class="game-desc">Simulated crash</span></button>
+    </nav>
 
-Clear history
-Your demo rounds will appear here.
+    <section class="play-area">
+      <div class="play-title"><div><div class="eyebrow" id="gameEyebrow">GAME 01</div><h2 id="gameTitle">Lucky Slots</h2></div><span class="demo-pill">● DEMO MODE</span></div>
+      <div id="gameContent"></div>
+      <div id="result" class="result" role="status" aria-live="polite">Choose your virtual-coin amount and play a round.</div>
+    </section>
 
-♛ ROYAL ARCADE
-Entertainment demo only. All coins, outcomes and winnings are simulated and have no monetary value.
+    <section class="history-section">
+      <div class="section-head compact"><div><div class="eyebrow">YOUR SESSION</div><h2>Recent rounds</h2></div><button id="clearHistory" class="text-button">Clear history</button></div>
+      <div id="history" class="history"><p class="subtle">Your demo rounds will appear here.</p></div>
+    </section>
+
+    <footer><span>♛ ROYAL ARCADE</span><p>Entertainment demo only. All coins, outcomes and winnings are simulated and have no monetary value.</p></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

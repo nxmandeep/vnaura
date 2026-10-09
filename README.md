@@ -1,50 +1,20 @@
+# Royal Arcade — Virtual Casino Demo
 
-# VNAURA — The Private Arcade
+A static browser demo with six games: slots, roulette, blackjack, five-card draw poker, dice, and a simulated crash multiplier.
 
-Welcome to **VNAURA**, a premium black-and-gold arcade website built for an elegant, mobile-friendly gaming experience.
+## Run locally
+1. Extract the ZIP file.
+2. Open `index.html` in a modern browser.
+3. No installation or build step is required.
 
-## Features
+## Publish free
+1. Create a GitHub repository and upload `index.html`, `style.css`, and `script.js`.
+2. In Cloudflare Pages, create a project connected to that repository.
+3. Use the default static-site settings (no build command; output directory `/` or the repository root).
+4. Deploy and test the generated URL.
 
-- Premium dark theme with gold accents
-- Responsive design for mobile and desktop
-- Slots game interface
-- Roulette game interface
-- Blackjack game interface
-- Poker game interface
-- Dice game interface
-- Crash game interface
-- Virtual demo wallet
-- Recent game history
-- Reset demo balance option
-
-## Technology
-
-- HTML5
-- CSS3
-- JavaScript
-
-## Project Files
-
-- `index.html` — Website structure
-- `style.css` — Website design and responsive layout
-- `script.js` — Game interactions and demo logic
-- `README.md` — Project documentation
-
-## Getting Started
-
-1. Upload all project files to the root of your GitHub repository.
-2. Make sure the filenames match the references in `index.html`.
-3. Enable static website hosting or connect the repository to a hosting provider.
-4. Open the published URL to view the website.
-
-## Important Notice
-
-VNAURA currently uses a virtual-coin entertainment concept.
-
-Virtual coins have no cash value. This project does not provide real-money deposits, cash betting, or withdrawals.
-
-Any future real-money functionality requires a prior legal review, applicable approvals, appropriate security controls, and authorized payment services.
-
-## Brand
-
-**VNAURA** — A premium arcade experience.
+## Demo-only limitations
+- All coins and results are fictional; there are no payments or withdrawals.
+- The wallet is held in page memory and resets when the page reloads.
+- Game outcomes are simplified demo logic, not audited casino software.
+- This is a front-end prototype, not a secure multi-user application.
